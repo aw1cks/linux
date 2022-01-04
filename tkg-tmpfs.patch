@@ -1,0 +1,11 @@
+--- a/customization.cfg	2022-01-04 20:40:54.021649310 +0000
++++ b/customization.cfg	2022-01-04 21:06:14.944450211 +0000
+@@ -52,7 +52,7 @@
+ _diffconfig_name=""
+ 
+ # [install.sh specific] Use tmpfs as a work directory, recommended when RAM >= 32GB to reduce HDD/SSD usage. For more information, see https://wiki.archlinux.org/title/Tmpfs
+-_use_tmpfs="false"
++_use_tmpfs="true"
+ 
+ # [install.sh specific] tmpfs folder path, only used when _use_tmpfs="true".
+ #                       Creates a linux-tkg work folder within that pathmake sure to have nothing important in "$_tmpfs_path/linux-tkg"

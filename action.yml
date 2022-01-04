@@ -1,0 +1,6 @@
+---
+name: Build TKG Kernel
+description: Build TKG kernel (https://github.com/Frogging-Family/linux-tkg)
+runs:
+  using: docker
+  image: Dockerfile
