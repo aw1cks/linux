@@ -12,6 +12,7 @@ if [ "$(df --output='size' /tmp | awk 'END{print $1}')" -gt 16463899 ]; then
 fi
 
 # Build
+sudo pacman -Syy
 makepkg -fs --noconfirm
 
 # Deal with artifacts
