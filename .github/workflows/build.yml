@@ -11,6 +11,10 @@ jobs:
   kernel:
     name: Build kernel
     runs-on: ubuntu-latest
+    matrix:
+      exclude:
+        - refs:
+           - refs/heads/master
     steps:
       - name: Check out repository
         uses: actions/checkout@v2
