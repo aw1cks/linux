@@ -1,14 +1,5 @@
 --- a/customization.cfg	2022-01-04 20:40:54.021649310 +0000
 +++ b/customization.cfg	2022-01-04 20:51:27.611126790 +0000
-@@ -6,7 +6,7 @@
- _distro=""
- 
- # Kernel Version - Options are "5.4", "5.7", "5.8", "5.9", "5.10", "5.11", "5.12", "5.13", "5.14"
--_version=""
-+_version="5.15"
- 
- #### MISC OPTIONS ####
- 
 @@ -32,7 +32,7 @@
  _force_all_threads="true"
  

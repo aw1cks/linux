@@ -1,0 +1,9 @@
+---
+name: Fetch latest kernel versions
+description: Fetches latest kernel versions by checking tags on https://github.com/torvalds/linux
+outputs:
+  versions:
+    description: Upstream tag list
+runs:
+  using: docker
+  image: Dockerfile
