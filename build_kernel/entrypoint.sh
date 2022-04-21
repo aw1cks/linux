@@ -1,5 +1,5 @@
 #!/bin/bash
-set -eo pipefail
+set -o pipefail
 
 cd '/aurbuilder'
 
@@ -10,7 +10,7 @@ printf '::endgroup::\n'
 
 
 printf '::group::Patching TKG configuration\n'
-patch --verbose -ignore-whitespace -p1 < '/github/workspace/tkg.patch' || (cat customization.cfg.rej; exit 1)
+patch --verbose -ignore-whitespace -p1 < '/github/workspace/tkg.patch' || cat customization.cfg.rej
 
 # Use tmpfs if we have >=16GB tmpfs
 if [ "$(df --output='size' /tmp | awk 'END{print $1}')" -gt 16463899 ]; then
